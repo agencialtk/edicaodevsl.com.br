@@ -50,15 +50,15 @@
         .video-section .video-container {
             position: relative;
             padding-bottom: 56.25%;
-            margin: 0 auto;
-            width: 100%;
+            height: 0;
         }
         .video-section .video-container iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            height: auto;
         }
         .quote-button {
             display: block;
@@ -76,13 +76,13 @@
         }
         @media screen and (min-width: 768px) {
             .video-section .video-container {
+                position: relative;
                 padding-bottom: 0;
-                height: auto;
-                max-width: 560px;
+                height: 315px;
             }
             .video-section .video-container iframe {
-                width: 100%;
-                height: 100%;
+                width: 560px;
+                height: 315px;
             }
         }
     </style>
